@@ -1,0 +1,37 @@
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col" style="width: 30px">{{ message.get('numner') }}</th>
+            <th scope="col">{{ message.get('type') }}</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="col" style="width: 30px">标题</th>
+                <td >{{ message.get('title') }}</td>
+            </tr>
+            <tr>
+                <th scope="col" style="width: 30px">A:</th>
+                <td id="optionA">{{ message.get('optionA') }}</td>
+            </tr>
+            <tr>
+                <th scope="col" style="width: 30px">B:</th>
+                <td id="optionB">{{ message.get('optionB') }}</td>
+            </tr>
+            <tr>
+                <th scope="col" style="width: 30px">C：</th>
+                <td id="optionC">{{ message.get('optionC') }}</td>
+            </tr>
+            <tr>
+                <th scope="col"style="width: 30px">D：</th>
+                <td id="optionD">{{ message.get('optionD') }}</td>
+            </tr>
+            <tr id="answer" style="display: none">
+                <th scope="col" style="width: 30px">答案：</th>
+                <td id="result" >{{ message.get('answer') }}</td>
+            </tr>
+
+        </tbody>
+
+    </table>
